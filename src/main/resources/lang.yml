@@ -1,0 +1,14 @@
+# ====================================
+# SnowyChunk - Language File v26.1.2
+# ====================================
+
+prefix: "&8[&bSnowyChunk&8] &r"
+
+commands:
+  chunk:
+    not-owner: "&cYou are not the owner!"
+    success: "&aCommand executed!"
+
+chunk:
+  protected: "&cThis area is protected!"
+  no-permission: "&cYou don't have permission!"
