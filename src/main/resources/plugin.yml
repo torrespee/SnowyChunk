@@ -1,0 +1,28 @@
+name: SnowyChunk
+version: 26.1.2
+main: com.snowy.chunk.SnowyChunk
+author: Torrespee
+description: Advanced chunk protection system with levels and flags
+website: https://github.com/torrespee/SnowyChunk
+api-version: 1.13
+
+commands:
+  chunk:
+    description: Main chunk command
+    usage: /<command> <subcommand>
+    aliases: [c, chunks]
+  chunkychat:
+    description: Send message to nearby chunk players
+    usage: /<command> <message>
+    aliases: [cc, chunkc]
+
+permissions:
+  snowy.chunk.admin:
+    description: Admin permission for chunk commands
+    default: op
+  snowy.chunk.use:
+    description: Basic chunk protection permission
+    default: true
+  snowy.chunk.chat:
+    description: Chat in chunks
+    default: true

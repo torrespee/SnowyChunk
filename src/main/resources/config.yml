@@ -1,0 +1,102 @@
+# ====================================
+# SnowyChunk - Configuration File v26.1.2
+# ====================================
+
+database:
+  type: sqlite
+  host: localhost
+  port: 3306
+  username: root
+  password: ''
+  database: snowy_chunk
+
+chunk-protection:
+  protection-block: AMETHYST_BLOCK
+  hologram-enabled: true
+  hologram-height: 1.5
+  overlap-check-radius: 32
+
+levels:
+  1:
+    name: "&e⭐ Level 1"
+    size: 1
+    requirements:
+      - type: KILL_MOBS
+        amount: 5
+      - type: NETHERITE_INGOTS
+        amount: 1
+    upgrade-cost: 0
+
+  2:
+    name: "&6⭐⭐ Level 2"
+    size: 4
+    requirements:
+      - type: KILL_MOBS
+        amount: 25
+      - type: ZOMBIE_KILLS
+        amount: 20
+      - type: NETHERITE_INGOTS
+        amount: 3
+    upgrade-cost: 0
+
+  3:
+    name: "&c⭐⭐⭐ Level 3"
+    size: 6
+    requirements:
+      - type: KILL_MOBS
+        amount: 100
+      - type: ZOMBIE_KILLS
+        amount: 50
+      - type: NETHERITE_BLOCKS
+        amount: 5
+      - type: DIAMONDS
+        amount: 64
+    upgrade-cost: 0
+
+  4:
+    name: "&d⭐⭐⭐⭐ Level 4"
+    size: 8
+    requirements:
+      - type: KILL_MOBS
+        amount: 250
+      - type: ZOMBIE_KILLS
+        amount: 150
+      - type: NETHERITE_BLOCKS
+        amount: 15
+      - type: DIAMONDS
+        amount: 128
+      - type: EMERALDS
+        amount: 32
+    upgrade-cost: 0
+
+flags:
+  pvp: true
+  mob-spawning: true
+  creeper-explosion: false
+  enderpearl-damage: false
+  fire-spread: false
+  water-flow: true
+  lava-flow: true
+  entity-damage: true
+  block-breaking: false
+  block-placing: false
+  liquid-placing: true
+  redstone: true
+  hopper-protection: true
+
+chunk-chat:
+  enabled: true
+  range: 1
+  prefix: "&7[&b%player%&7] &r"
+  cooldown: 1
+
+hologram:
+  format:
+    - "&6&l=== CHUNK PROTECTION ==="
+    - "&eLevel: &f%level%"
+    - "&eOwner: &f%owner%"
+    - "&eMembers: &f%members%/%max-members%"
+    - "&7---"
+    - "&eUpgradeable: &f%upgradeable%"
+    - "&eLClick for menu"
+    - "&6&l===================="

@@ -1,0 +1,49 @@
+prefix: "&8[&bSnowyChunk&8] &r"
+
+commands:
+  chunk:
+    not-owner: "&cYou are not the owner of this chunk!"
+    success: "&aCommand executed successfully!"
+    invalid-subcommand: "&cInvalid subcommand. Use: /chunk help"
+
+chunk:
+  protected: "&cThis area is protected by &f%owner%&c!"
+  cannot-place: "&cYou cannot place blocks in this protected chunk!"
+  cannot-break: "&cYou cannot break blocks in this protected chunk!"
+  cannot-interact: "&cYou cannot interact with this chunk!"
+  already-protected: "&cThis chunk is already protected!"
+  overlap-detected: "&cCannot place protection! Overlapping with &f%nearby-owner%&c's chunk!"
+  no-permission: "&cYou don't have permission to do this!"
+  protection-placed: "&aChunk protection placed successfully!"
+  protection-removed: "&aChunk protection removed!"
+
+level:
+  upgrade-success: "&aChunk upgraded to &f%new-level%&a!"
+  upgrade-failed: "&cUpgrade failed! Missing requirements:"
+  requirements-not-met: "&c  - &f%requirement%&c: &f%current%&c/&f%needed%"
+  max-level: "&cYour chunk is already at max level!"
+
+invite:
+  player-invited: "&aPlayer &f%player%&a has been invited to your chunk!"
+  invite-sent: "&aInvite sent to &f%player%&a!"
+  invite-accepted: "&aInvite accepted! You can now build in &f%owner%&a's chunk!"
+
+flags:
+  flag-set: "&aFlag &f%flag%&a set to &f%status%&a!"
+  flag-invalid: "&cInvalid flag: &f%flag%&c!"
+
+info:
+  header: "&b&l=== CHUNK INFORMATION ==="
+  level: "&eLevel: &f%level%"
+  owner: "&eOwner: &f%owner%"
+  size: "&eProtected Size: &f%size%x%size% chunks"
+  members: "&eMembers: &f%members%"
+
+chat:
+  chat-format: "&7[&bChunk&7] &f%player%&7: &r%message%"
+  cooldown: "&cWait &f%seconds%&c seconds before sending another message!"
+
+error:
+  invalid-level: "&cInvalid level specified!"
+  player-not-found: "&cPlayer not found!"
+  chunk-not-found: "&cChunk not found!"
